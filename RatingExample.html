@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/app.js"></script>
+    <link href="Content/rating.css" rel="stylesheet" />
+</head>
+
+<body ng-app="starApp">
+    <div ng-controller="StarCtrl">
+        <div>
+            {{rating.current}} out of {{rating.max}}
+            <div star-rating rating-value="rating.current" max="rating.max"></div>
+        </div>
+    </div>
+</body>
+</html>
